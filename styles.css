@@ -1,0 +1,51 @@
+html,
+body {
+  height: 100%;
+  background-color: #191716;
+  color: #929982;
+  font-family: "Roboto", sans-serif;
+}
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.header-container {
+  display: block;
+
+  background: -webkit-linear-gradient(135deg, #929982, #8e5572 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header-title {
+  font-size: 48px;
+  font-weight: 800;
+  margin: 5px;
+  cursor: default;
+}
+
+.header-link {
+  text-decoration: none;
+}
+
+.header-subtext {
+  margin: 0;
+}
+
+.header-subtext__upper {
+  text-align: left;
+  color: #929982;
+  cursor: default;
+}
+
+.header-subtext__lower {
+  text-align: right;
+  color: #8e5572;
+}
