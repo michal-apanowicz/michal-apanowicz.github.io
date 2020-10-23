@@ -10,6 +10,7 @@ body {
   color: #929982;
   font-family: "Roboto", sans-serif;
 }
+
 main {
   display: flex;
   flex-direction: row;
@@ -36,11 +37,21 @@ main {
   cursor: default;
 }
 
+@media (min-width: 600px) {
+  .header-title {
+    font-size: 96px;
+  }
+  .header-subtext {
+    font-size: 32px;
+  }
+}
+
 .header-link {
   text-decoration: none;
 }
 
 .header-subtext {
+  font-size: 24px;
   margin: 0;
 }
 
