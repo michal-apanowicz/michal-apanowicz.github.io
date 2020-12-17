@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "Roboto"; /*a name to be used later*/
-  src: url("./fonts/Roboto/Roboto-Regular.ttf"); /*URL to font*/
+  font-family: "Impostor";
+  src: url("./fonts/The Impostor.ttf");
 }
 
 html,
@@ -8,7 +8,7 @@ body {
   height: 100%;
   background-color: #191716;
   color: #929982;
-  font-family: "Roboto", sans-serif;
+  font-family: "Impostor", sans-serif;
 }
 
 main {
@@ -23,7 +23,8 @@ main {
 
 .header-container {
   display: block;
-
+  background-color: #929982;
+  background-image: linear-gradient(to bottom, #929982, #8e5572);
   background: -webkit-linear-gradient(135deg, #929982, #8e5572 80%);
   -webkit-background-clip: text;
   background-clip: text;
