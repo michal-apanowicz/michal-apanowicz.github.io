@@ -32,37 +32,35 @@ main {
 }
 
 .header-title {
-  font-size: 48px;
-  font-weight: 800;
+  font-size: 32px;
   margin: 5px;
   cursor: default;
 }
 
-@media (min-width: 600px) {
-  .header-title {
-    font-size: 96px;
-  }
-  .header-subtext {
-    font-size: 32px;
-  }
-}
-
-.header-link {
-  text-decoration: none;
-}
-
 .header-subtext {
-  font-size: 24px;
+  font-size: 12px;
   margin: 0;
 }
 
 .header-subtext__upper {
   text-align: left;
   color: #929982;
-  cursor: default;
 }
 
 .header-subtext__lower {
   text-align: right;
   color: #8e5572;
+}
+
+.header-link {
+  text-decoration: none;
+}
+
+@media (min-width: 900px) {
+  .header-title {
+    font-size: 96px;
+  }
+  .header-subtext {
+    font-size: 24px;
+  }
 }
