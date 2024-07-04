@@ -7,60 +7,70 @@ html,
 body {
   height: 100%;
   background-color: #191716;
-  color: #929982;
   font-family: "Impostor", sans-serif;
 }
 
 main {
+  height: 100%;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  vertical-align: middle;
-  height: 100%;
 }
 
 .header-container {
-  display: block;
-  background-color: #929982;
   background-image: linear-gradient(to bottom, #929982, #8e5572);
   background: -webkit-linear-gradient(135deg, #929982, #8e5572 80%);
+  -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .header-title {
+  margin: 0;
   font-size: 32px;
-  margin: 5px;
+  height: 72px;
+  line-height: 72px;
   cursor: default;
 }
 
-.header-subtext {
-  font-size: 12px;
-  margin: 0;
-}
-
-.header-subtext__upper {
-  text-align: left;
-  color: #929982;
-}
-
-.header-subtext__lower {
-  text-align: right;
-  color: #8e5572;
+.header-tag {
+  cursor: default;
 }
 
 .header-link {
   text-decoration: none;
+  cursor: pointer;
+}
+
+.header-link:hover {
+  background-color: #929982;
+  -webkit-background-clip: text;
+  background-clip: text;
+  transition: all ease 1s;
+}
+
+.tag-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.tag-group--upper {
+  align-items: flex-start;
+}
+
+.tag-group--lower {
+  align-items: flex-end;
 }
 
 @media (min-width: 900px) {
   .header-title {
     font-size: 96px;
+    height: 148px;
+    line-height: 148px;
   }
-  .header-subtext {
+
+  .header-tag, .header-link {
     font-size: 24px;
   }
 }
